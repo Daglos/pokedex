@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+html, body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+main {
+  @apply min-h-screen flex flex-col bg-gradient-to-br from-sky-50 via-white to-blue-100 text-gray-800 font-sans;
+}
+
+#root {
+  @apply flex flex-col flex-1 shrink-0 min-h-full;
+}
+
+header {
+  @apply bg-gradient-to-r from-purple-600 to-pink-500 px-6 py-4 flex justify-between items-center sticky top-0 z-50;
+}
+
+header nav ul {
+  @apply flex gap-4;
+}
+
+header h1 {
+  @apply text-2xl font-bold mb-4 text-white;
+}
+
+header nav ul li a {
+   @apply text-xl text-white font-bold px-4 py-2 rounded-lg transition duration-200 hover:bg-white hover:text-purple-600 hover:shadow;
+}
+
+main {
+  @apply flex-1 px-4 py-6;
+}
+
+footer {
+   @apply  w-full bg-gradient-to-r from-purple-600 to-pink-500 text-white text-center px-4 py-6 shadow-inner;
+}
+
+
+.container {
+  @apply w-full max-w-screen-lg mx-auto px-4;
+}
+
+.half-panel {
+  @apply w-full flex flex-col md:flex-row gap-4 my-6;
+}
+
+.half-panel.inverted {
+  @apply md:flex-row-reverse;
+}
+
+.half-panel section {
+  @apply flex-1 w-full md:w-1/2 bg-white shadow rounded-lg p-4;
+}
+
+h2 {
+    @apply font-bold;
+}

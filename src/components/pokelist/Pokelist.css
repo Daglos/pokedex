@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.card-holder {
+  @apply flex flex-wrap justify-center gap-6 py-6;
+}
+
+.btn-siguiente {
+  @apply bg-purple-600 text-white font-bold text-xl px-5 py-2.5 rounded-lg cursor-pointer transition duration-200;
+}
+
+.btn-siguiente:hover {
+  @apply bg-pink-500 shadow-lg;
+}

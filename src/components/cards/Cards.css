@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.card {
+  @apply border max-w-64 rounded-xl shadow-md transition-transform hover:scale-105 hover:shadow-xl overflow-hidden bg-white;
+}
+
+.card-header {
+  @apply relative w-full pt-9;
+
+}
+.card-header img {
+  @apply w-full h-40 object-cover;
+}
+
+.card-header h1 {
+  @apply absolute inset-x-0 top-0 text-xl font-bold text-white bg-gray-800/60 px-4 py-2 rounded-none text-center;
+
+}
+
+.card-body {
+  @apply px-4 py-3 text-left;
+}
+
+.card-footer {
+  @apply w-full mt-3 flex flex-row gap-2;
+}
+
+.card-footer button {
+  @apply  w-full bg-purple-600 text-white py-2 px-4 rounded shadow hover:opacity-90 transition-opacity;
+  
+}
